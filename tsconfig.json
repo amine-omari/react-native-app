@@ -6,5 +6,5 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["**/*.ts", "**/*.tsx", ".expo/types/**/*.ts", "expo-env.d.ts"]
+  "include": ["**/*.ts", "**/*.tsx", ".expo/types/**/*.ts", "expo-env.d.ts", "components/common/header/screenheader.style.js", "components/home/welcome/welcome.style.js", "components/jobdetails/tabs/tabs.style.js"]
 }
