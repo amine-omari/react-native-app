@@ -1,8 +1,8 @@
 import { ScreenHeaderBtn } from "@/components";
-import { COLORS, icons, images } from "@/constants";
+import { COLORS, SIZES, icons, images } from "@/constants";
 import { Stack, useRouter } from "expo-router";
 import React from "react";
-import { SafeAreaView } from "react-native";
+import { SafeAreaView, ScrollView, View } from "react-native";
 
 const Home = () => {
   const router = useRouter();
@@ -22,6 +22,10 @@ const Home = () => {
           headerTitle: "",
         }}
       />
+
+      <ScrollView showsVerticalScrollIndicator={false}>
+        <View style={{ flex: 1, padding: SIZES.medium }}></View>
+      </ScrollView>
     </SafeAreaView>
   );
 };
