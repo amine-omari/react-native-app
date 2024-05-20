@@ -1,8 +1,22 @@
 import React from "react";
-import { TouchableOpacity } from "react-native";
+import { Image, TouchableOpacity } from "react-native";
 
-const ScreenHeaderBtn = () => {
-  return <TouchableOpacity></TouchableOpacity>;
+type TScreenHeaderBtn = {
+  iconUrl: string;
+  dimension: string;
+  handlePress: any;
+};
+
+const ScreenHeaderBtn = ({
+  iconUrl,
+  dimension,
+  handlePress,
+}: TScreenHeaderBtn) => {
+  return (
+    <TouchableOpacity>
+      <Image src={iconUrl} />
+    </TouchableOpacity>
+  );
 };
 
 export default ScreenHeaderBtn;
