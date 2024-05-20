@@ -1,12 +1,13 @@
+import { COLORS } from "@/constants";
 import { useRouter } from "expo-router";
 import React from "react";
-import { SafeAreaView, Text, View } from "react-native";
+import { SafeAreaView, Text } from "react-native";
 
 const Home = () => {
   const router = useRouter();
 
   return (
-    <SafeAreaView>
+    <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.lightWhite }}>
       <Text>Home</Text>
     </SafeAreaView>
   );
