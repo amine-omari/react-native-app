@@ -11,7 +11,7 @@
     "**/*.tsx",
     ".expo/types/**/*.ts",
     "expo-env.d.ts",
-    "components/common/header/screenheader.style.js",
+    "components/common/header/screenheader.style.ts",
     "components/home/welcome/welcome.style.js",
     "components/jobdetails/tabs/tabs.style.js"
   ]
