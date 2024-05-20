@@ -1,4 +1,9 @@
-import { Popularjobs, ScreenHeaderBtn, Welcome } from "@/components";
+import {
+  Nearbyjobs,
+  Popularjobs,
+  ScreenHeaderBtn,
+  Welcome,
+} from "@/components";
 import { COLORS, SIZES, icons, images } from "@/constants";
 import { Stack, useRouter } from "expo-router";
 import React from "react";
@@ -27,6 +32,7 @@ const Home = () => {
         <View style={{ flex: 1, padding: SIZES.medium }}>
           <Welcome />
           <Popularjobs />
+          <Nearbyjobs />
         </View>
       </ScrollView>
     </SafeAreaView>
