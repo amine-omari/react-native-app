@@ -14,15 +14,10 @@ const ScreenHeaderBtn = ({
   handlePress,
 }: TScreenHeaderBtn) => {
   return (
-    <TouchableOpacity
-      // @ts-ignore
-      style={styles.btnContainer}
-      onPress={handlePress}
-    >
+    <TouchableOpacity style={styles.btnContainer} onPress={handlePress}>
       <Image
         src={iconUrl}
         resizeMode="cover"
-        // @ts-ignore
         style={styles.btnImg(dimension)}
       />
     </TouchableOpacity>
