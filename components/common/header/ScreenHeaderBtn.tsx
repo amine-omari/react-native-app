@@ -1,10 +1,11 @@
 import React from "react";
 import { Image, TouchableOpacity } from "react-native";
+import styles from "./screenheader.style";
 
 type TScreenHeaderBtn = {
   iconUrl: string;
   dimension: string;
-  handlePress: any;
+  handlePress?: any;
 };
 
 const ScreenHeaderBtn = ({
@@ -13,8 +14,17 @@ const ScreenHeaderBtn = ({
   handlePress,
 }: TScreenHeaderBtn) => {
   return (
-    <TouchableOpacity>
-      <Image src={iconUrl} />
+    <TouchableOpacity
+      // @ts-ignore
+      style={styles.btnContainer}
+      onPress={handlePress}
+    >
+      <Image
+        src={iconUrl}
+        resizeMode="cover"
+        // @ts-ignore
+        style={styles.btnImg(dimension)}
+      />
     </TouchableOpacity>
   );
 };
