@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   View,
   Text,
@@ -14,6 +14,8 @@ import { icons } from "@/constants";
 const jobTypes = ["Full-time", "Part-time", "Contractor"];
 
 const Welcome = () => {
+  const [activeJobType, setActiveJobType] = useState("Full-time");
+
   return (
     <View>
       <View style={styles.container}>
@@ -42,7 +44,7 @@ const Welcome = () => {
         <FlatList
           data={jobTypes}
           renderItem={({ item }) => (
-            <TouchableOpacity style={styles.tab(item)}>
+            <TouchableOpacity style={styles.tab(activeJobType, item)}>
               <Text>{item}</Text>
             </TouchableOpacity>
           )}
