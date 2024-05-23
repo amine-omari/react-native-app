@@ -21,8 +21,12 @@ const Welcome = () => {
             placeholder="What are you looking for?"
           />
         </View>
-        <TouchableOpacity>
-          <Image source={icons.search} resizeMode="contain" />
+        <TouchableOpacity style={styles.searchBtn}>
+          <Image
+            source={icons.search}
+            resizeMode="contain"
+            style={styles.searchBtnImage}
+          />
         </TouchableOpacity>
       </View>
     </View>
