@@ -1,7 +1,8 @@
 import React from "react";
-import { View, Text, TextInput } from "react-native";
+import { View, Text, TextInput, TouchableOpacity, Image } from "react-native";
 
 import styles from "./welcome.style";
+import { icons } from "@/constants";
 
 const Welcome = () => {
   return (
@@ -20,6 +21,9 @@ const Welcome = () => {
             placeholder="What are you looking for?"
           />
         </View>
+        <TouchableOpacity>
+          <Image source={icons.search} resizeMode="contain" />
+        </TouchableOpacity>
       </View>
     </View>
   );
