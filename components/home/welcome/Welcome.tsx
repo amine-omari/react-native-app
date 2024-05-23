@@ -11,6 +11,8 @@ import {
 import styles from "./welcome.style";
 import { icons } from "@/constants";
 
+const jobTypes = ["Full-time", "Part-time", "Contractor"];
+
 const Welcome = () => {
   return (
     <View>
@@ -36,8 +38,15 @@ const Welcome = () => {
           />
         </TouchableOpacity>
       </View>
-      <View>
-        <FlatList />
+      <View style={styles.tabsContainer}>
+        <FlatList
+          data={jobTypes}
+          renderItem={({ item }) => (
+            <TouchableOpacity>
+              <Text>{item}</Text>
+            </TouchableOpacity>
+          )}
+        />
       </View>
     </View>
   );
