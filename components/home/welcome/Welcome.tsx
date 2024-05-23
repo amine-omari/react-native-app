@@ -42,7 +42,7 @@ const Welcome = () => {
         <FlatList
           data={jobTypes}
           renderItem={({ item }) => (
-            <TouchableOpacity>
+            <TouchableOpacity style={styles.tab(item)}>
               <Text>{item}</Text>
             </TouchableOpacity>
           )}
