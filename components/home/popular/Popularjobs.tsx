@@ -1,5 +1,11 @@
 import React from "react";
-import { View, Text, TouchableOpacity, ActivityIndicator } from "react-native";
+import {
+  View,
+  Text,
+  TouchableOpacity,
+  ActivityIndicator,
+  FlatList,
+} from "react-native";
 
 import styles from "./popularjobs.style";
 import { COLORS } from "@/constants";
@@ -21,7 +27,7 @@ const Popularjobs = () => {
         ) : error ? (
           <Text>Something went wrong</Text>
         ) : (
-          <Text></Text>
+          <FlatList data={[1, 2, 3, 4]} />
         )}
       </View>
     </View>
