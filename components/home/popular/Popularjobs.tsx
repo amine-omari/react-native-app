@@ -6,7 +6,7 @@ import styles from "./popularjobs.style";
 const Popularjobs = () => {
   return (
     <View style={styles.container}>
-      <Text>Popularjobs</Text>
+      <View style={styles.header}></View>
     </View>
   );
 };
