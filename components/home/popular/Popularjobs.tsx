@@ -5,7 +5,7 @@ import styles from "./popularjobs.style";
 
 const Popularjobs = () => {
   return (
-    <View>
+    <View style={styles.container}>
       <Text>Popularjobs</Text>
     </View>
   );
