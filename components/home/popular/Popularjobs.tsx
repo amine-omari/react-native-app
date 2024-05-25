@@ -8,7 +8,7 @@ import {
 } from "react-native";
 
 import styles from "./popularjobs.style";
-import { COLORS } from "@/constants";
+import { COLORS, SIZES } from "@/constants";
 import PopularJobCard from "@/components/common/cards/popular/PopularJobCard";
 
 const Popularjobs = () => {
@@ -28,7 +28,13 @@ const Popularjobs = () => {
         ) : error ? (
           <Text>Something went wrong</Text>
         ) : (
-          <FlatList data={[1, 2, 3, 4]} renderItem={() => <PopularJobCard />} />
+          <FlatList
+            data={[1, 2, 3, 4, 5, 6, 7, 8]}
+            renderItem={({ item }) => <PopularJobCard item={item} />}
+            keyExtractor={(item) => item?.job_Id}
+            contentContainerStyle={{ columnGap: SIZES.medium }}
+            horizontal
+          />
         )}
       </View>
     </View>
