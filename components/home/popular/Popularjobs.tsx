@@ -9,6 +9,7 @@ import {
 
 import styles from "./popularjobs.style";
 import { COLORS } from "@/constants";
+import PopularJobCard from "@/components/common/cards/popular/PopularJobCard";
 
 const Popularjobs = () => {
   const isLoading = false;
@@ -27,7 +28,7 @@ const Popularjobs = () => {
         ) : error ? (
           <Text>Something went wrong</Text>
         ) : (
-          <FlatList data={[1, 2, 3, 4]} />
+          <FlatList data={[1, 2, 3, 4]} renderItem={() => <PopularJobCard />} />
         )}
       </View>
     </View>
