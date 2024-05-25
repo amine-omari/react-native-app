@@ -9,7 +9,7 @@ import {
 } from "react-native";
 
 import styles from "./welcome.style";
-import { icons } from "@/constants";
+import { SIZES, icons } from "@/constants";
 import { router } from "expo-router";
 
 const jobTypes = ["Full-time", "Part-time", "Contractor"];
@@ -55,6 +55,9 @@ const Welcome = () => {
               <Text style={styles.tabText(activeJobType, item)}>{item}</Text>
             </TouchableOpacity>
           )}
+          keyExtractor={(item) => item}
+          contentContainerStyle={{ columnGap: SIZES.small }}
+          horizontal
         />
       </View>
     </View>
