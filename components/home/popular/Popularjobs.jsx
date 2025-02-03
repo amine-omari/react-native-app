@@ -8,7 +8,7 @@ const Popularjobs = () => {
   const router = useRouter();
 
   return (
-    <View>
+    <View style={styles.container}>
       <Text>Popularjobs</Text>
     </View>
   );
