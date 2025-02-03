@@ -24,7 +24,9 @@ const Home = () => {
         }}
       />
 
-      <ScrollView showsVerticalScrollIndicator={false}></ScrollView>
+      <ScrollView showsVerticalScrollIndicator={false}>
+        <View></View>
+      </ScrollView>
     </SafeAreaView>
   );
 };
