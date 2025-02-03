@@ -2,7 +2,7 @@ import { View, ScrollView, SafeAreaView, Text } from "react-native";
 import { useState } from "react";
 import { Stack, useRouter } from "expo-router";
 import { COLORS, SIZES } from "../constants";
-import { ScreenHeaderBtn, Welcome } from "../components";
+import { Popularjobs, ScreenHeaderBtn, Welcome } from "../components";
 
 const Home = () => {
   const router = useRouter();
@@ -28,6 +28,8 @@ const Home = () => {
       <ScrollView showsVerticalScrollIndicator={false}>
         <View style={{ flex: 1, padding: SIZES.medium }}>
           <Welcome />
+
+          <Popularjobs />
         </View>
       </ScrollView>
     </SafeAreaView>
