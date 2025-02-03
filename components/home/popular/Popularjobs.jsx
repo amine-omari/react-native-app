@@ -36,7 +36,8 @@ const Popularjobs = () => {
             data={[1, 2, 3, 4, 5, 6, 7, 8, 9]}
             key={(item) => item?.job_id}
             contentContainerStyle={{ columnGap: SIZES.medium }}
-            renderItem={() => <PopularJobCard item={item} />}
+            horizontal
+            renderItem={({ item }) => <PopularJobCard item={item} />}
           />
         )}
       </View>
