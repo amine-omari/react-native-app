@@ -1,4 +1,7 @@
 import { useState } from "react";
+import { RAPID_API_KEY } from "@env";
+
+const rapidApiKey = RAPID_API_KEY;
 
 const useFetch = ({ endpoint }) => {
   const [data, setData] = useState([]);
@@ -9,7 +12,7 @@ const useFetch = ({ endpoint }) => {
     method: "GET",
     url: `https://jsearch.p.rapidapi.com/${endpoint}`,
     headers: {
-      "x-rapidapi-key": "121ee3519fmsha81dfa35b995e5dp12e546jsna66077285727",
+      "x-rapidapi-key": rapidApiKey,
       "x-rapidapi-host": "jsearch.p.rapidapi.com",
     },
     params: {
