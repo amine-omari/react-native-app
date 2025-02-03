@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { RAPID_API_KEY } from "@env";
+import axios from "axios";
 
 const rapidApiKey = RAPID_API_KEY;
 
@@ -16,5 +17,21 @@ const useFetch = (endpoint, query) => {
       "x-rapidapi-host": "jsearch.p.rapidapi.com",
     },
     params: { ...query },
+  };
+
+  const fetchData = async () => {
+    setIsLoading(true);
+
+    try {
+      const response = await axios.request(options);
+
+      setData(response.data.data);
+      setIsLoading(false);
+    } catch (error) {
+      setError(error);
+      alert("there is an error");
+    } finally {
+      setIsLoading(false);
+    }
   };
 };
