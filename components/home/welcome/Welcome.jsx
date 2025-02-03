@@ -33,6 +33,8 @@ const Welcome = () => {
           />
         </TouchableOpacity>
       </View>
+
+      <View style={styles.tabsContainer}></View>
     </View>
   );
 };
