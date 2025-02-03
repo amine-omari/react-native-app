@@ -1,8 +1,9 @@
 import React from "react";
-import { View, Text, TextInput, TouchableOpacity } from "react-native";
+import { View, Text, TextInput, TouchableOpacity, Image } from "react-native";
 
 import styles from "./welcome.style";
 import { useRouter } from "expo-router";
+import { icons } from "../../../constants";
 
 const Welcome = () => {
   const router = useRouter();
@@ -24,7 +25,13 @@ const Welcome = () => {
           />
         </View>
 
-        <TouchableOpacity></TouchableOpacity>
+        <TouchableOpacity>
+          <Image
+            source={icons.search}
+            resizeMode="contain"
+            style={styles.searchBtnImage}
+          />
+        </TouchableOpacity>
       </View>
     </View>
   );
