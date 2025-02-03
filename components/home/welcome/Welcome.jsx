@@ -1,5 +1,12 @@
 import React from "react";
-import { View, Text, TextInput, TouchableOpacity, Image } from "react-native";
+import {
+  View,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  Image,
+  FlatList,
+} from "react-native";
 
 import styles from "./welcome.style";
 import { useRouter } from "expo-router";
@@ -34,7 +41,9 @@ const Welcome = () => {
         </TouchableOpacity>
       </View>
 
-      <View style={styles.tabsContainer}></View>
+      <View style={styles.tabsContainer}>
+        <FlatList />
+      </View>
     </View>
   );
 };
