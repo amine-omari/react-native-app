@@ -1,10 +1,9 @@
 {
   "expo": {
     "scheme": "acme",
-    "plugins": [
-      "expo-router"
-    ],
+    "plugins": ["expo-router"],
     "name": "react-native-app",
-    "slug": "react-native-app"
+    "slug": "react-native-app",
+    "newArchEnabled": true
   }
 }
