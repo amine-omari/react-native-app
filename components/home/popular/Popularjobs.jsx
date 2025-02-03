@@ -9,7 +9,7 @@ const Popularjobs = () => {
 
   return (
     <View style={styles.container}>
-      <Text>Popularjobs</Text>
+      <View style={styles.header}></View>
     </View>
   );
 };
