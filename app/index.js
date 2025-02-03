@@ -1,7 +1,7 @@
 import { View, ScrollView, SafeAreaView, Text } from "react-native";
 import { useState } from "react";
 import { Stack, useRouter } from "expo-router";
-import { COLORS, SIZES } from "../constants";
+import { COLORS, icons, SIZES } from "../constants";
 import { Popularjobs, ScreenHeaderBtn, Welcome } from "../components";
 
 const Home = () => {
