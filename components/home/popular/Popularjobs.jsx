@@ -15,6 +15,8 @@ const Popularjobs = () => {
           <Text style={styles.headerBtn}>Show all</Text>
         </TouchableOpacity>
       </View>
+
+      <View style={styles.cardsContainer}></View>
     </View>
   );
 };
