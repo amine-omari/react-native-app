@@ -15,10 +15,10 @@ const Home = () => {
           },
           headerShadowVisible: false,
           headerLeft: () => (
-            <ScreenHeaderBtn icon={icons.menu} dimension="60%" />
+            <ScreenHeaderBtn iconUrl={icons.menu} dimension="60%" />
           ),
           headerRight: () => (
-            <ScreenHeaderBtn icon={icons.profile} dimension="100%" />
+            <ScreenHeaderBtn iconUrl={icons.profile} dimension="100%" />
           ),
         }}
       />
