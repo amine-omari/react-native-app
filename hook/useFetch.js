@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { RAPID_API_KEY } from "@env";
 import axios from "axios";
 
@@ -34,4 +34,8 @@ const useFetch = (endpoint, query) => {
       setIsLoading(false);
     }
   };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
 };
