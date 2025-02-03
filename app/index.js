@@ -1,7 +1,7 @@
 import { View, ScrollView, SafeAreaView, Text } from "react-native";
 import { useState } from "react";
 import { Stack, useRouter } from "expo-router";
-import { COLORS } from "../constants";
+import { COLORS, SIZES } from "../constants";
 
 const Home = () => {
   const router = useRouter();
@@ -25,7 +25,7 @@ const Home = () => {
       />
 
       <ScrollView showsVerticalScrollIndicator={false}>
-        <View></View>
+        <View style={{ flex: 1, padding: SIZES.medium }}></View>
       </ScrollView>
     </SafeAreaView>
   );
