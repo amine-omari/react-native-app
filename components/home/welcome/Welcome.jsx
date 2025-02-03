@@ -25,7 +25,7 @@ const Welcome = () => {
           />
         </View>
 
-        <TouchableOpacity>
+        <TouchableOpacity style={styles.searchBtn}>
           <Image
             source={icons.search}
             resizeMode="contain"
