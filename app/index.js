@@ -14,6 +14,12 @@ const Home = () => {
             backgroundColor: COLORS.lightWhite,
           },
           headerShadowVisible: false,
+          headerLeft: () => (
+            <ScreeHeaderBtn icon={icons.menu} dimension="60%" />
+          ),
+          headerRight: () => (
+            <ScreeHeaderBtn icon={icons.profile} dimension="100%" />
+          ),
         }}
       />
     </SafeAreaView>
