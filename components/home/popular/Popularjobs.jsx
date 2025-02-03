@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   View,
   Text,
@@ -14,6 +14,7 @@ import PopularJobCard from "../../common/cards/popular/PopularJobCard";
 import useFetch from "../../../hook/useFetch";
 
 const Popularjobs = () => {
+  const [selectedJob, setSelectedJob] = useState();
   const router = useRouter();
   const { data, isLoading, error } = useFetch("search", {
     query: "React developer",
