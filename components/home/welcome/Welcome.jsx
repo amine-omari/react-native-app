@@ -49,6 +49,7 @@ const Welcome = () => {
           data={jobTypes}
           keyExtractor={(item) => item}
           contentContainerStyle={{ columnGap: SIZES.small }}
+          horizontal
           renderItem={({ item }) => (
             <TouchableOpacity
               style={styles.tab(activeJobType, item)}
