@@ -22,6 +22,8 @@ const Home = () => {
           ),
         }}
       />
+
+      <ScrollView></ScrollView>
     </SafeAreaView>
   );
 };
