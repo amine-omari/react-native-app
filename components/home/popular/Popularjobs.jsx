@@ -9,7 +9,8 @@ import {
 import { useRouter } from "expo-router";
 
 import styles from "./popularjobs.style";
-import { COLORS } from "../../../constants";
+import { COLORS, SIZES } from "../../../constants";
+import PopularJobCard from "../../common/cards/popular/PopularJobCard";
 
 const Popularjobs = () => {
   const router = useRouter();
@@ -31,7 +32,12 @@ const Popularjobs = () => {
         ) : error ? (
           <Text>something went wrong</Text>
         ) : (
-          <FlatList />
+          <FlatList
+            data={[1, 2, 3, 4, 5, 6, 7, 8, 9]}
+            key={(item) => item?.job_id}
+            contentContainerStyle={{ columnGap: SIZES.medium }}
+            renderItem={() => <PopularJobCard item={item} />}
+          />
         )}
       </View>
     </View>
