@@ -13,6 +13,7 @@ const Home = () => {
           headerStyle: {
             backgroundColor: COLORS.lightWhite,
           },
+          headerShadowVisible: false,
         }}
       />
     </SafeAreaView>
