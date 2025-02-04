@@ -2,8 +2,9 @@ import { View, Text, SafeAreaView } from "react-native";
 import React from "react";
 import { Stack, useRouter } from "expo-router";
 import useFetch from "../../hook/useFetch";
-import { COLORS } from "../../constants";
+import { COLORS, icons } from "../../constants";
 import { useSearchParams } from "expo-router/build/hooks";
+import { ScreenHeaderBtn } from "../../components";
 
 const JobDetails = () => {
   const params = useSearchParams();
@@ -20,6 +21,13 @@ const JobDetails = () => {
           headerStyle: { backgroundColor: COLORS.lightWhite },
           headerShadowVisible: false,
           headerBackVisible: false,
+          headerLeft: () => (
+            <ScreenHeaderBtn
+              iconUrl={icons.left}
+              dimension="60%"
+              handlePress={() => router.back}
+            />
+          ),
         }}
       ></Stack.Screen>
     </SafeAreaView>
