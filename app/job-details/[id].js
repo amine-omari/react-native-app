@@ -11,7 +11,7 @@ import { Stack, useRouter } from "expo-router";
 import useFetch from "../../hook/useFetch";
 import { COLORS, icons, SIZES } from "../../constants";
 import { useSearchParams } from "expo-router/build/hooks";
-import { Company, ScreenHeaderBtn } from "../../components";
+import { Company, JobTabs, ScreenHeaderBtn } from "../../components";
 
 const JobDetails = () => {
   const params = useSearchParams();
@@ -62,6 +62,8 @@ const JobDetails = () => {
           ) : (
             <View style={{ padding: SIZES.medium, paddingBottom: 1000 }}>
               <Company />
+
+              <JobTabs />
             </View>
           )}
         </ScrollView>
