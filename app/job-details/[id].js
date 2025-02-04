@@ -1,9 +1,11 @@
 import { View, Text } from "react-native";
 import React from "react";
-import { useSearchParams } from "expo-router/build/hooks";
+import { useRouter, useSearchParams } from "expo-router";
 
 const JobDetails = () => {
   const params = useSearchParams();
+  const router = useRouter();
+
   return (
     <View>
       <Text>JobDetails</Text>
