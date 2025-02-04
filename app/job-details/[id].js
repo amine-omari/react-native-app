@@ -1,4 +1,10 @@
-import { View, Text, SafeAreaView, ScrollView } from "react-native";
+import {
+  View,
+  Text,
+  SafeAreaView,
+  ScrollView,
+  RefreshControl,
+} from "react-native";
 import React from "react";
 import { Stack, useRouter } from "expo-router";
 import useFetch from "../../hook/useFetch";
@@ -35,7 +41,12 @@ const JobDetails = () => {
         }}
       ></Stack.Screen>
 
-      <ScrollView showsVerticalScrollIndicator={false}></ScrollView>
+      <ScrollView
+        showsVerticalScrollIndicator={false}
+        refreshControl={
+          <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
+        }
+      ></ScrollView>
     </SafeAreaView>
   );
 };
