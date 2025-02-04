@@ -45,12 +45,14 @@ const JobDetails = () => {
         }}
       ></Stack.Screen>
 
-      <ScrollView
-        showsVerticalScrollIndicator={false}
-        refreshControl={
-          <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
-        }
-      ></ScrollView>
+      <>
+        <ScrollView
+          showsVerticalScrollIndicator={false}
+          refreshControl={
+            <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
+          }
+        ></ScrollView>
+      </>
     </SafeAreaView>
   );
 };
