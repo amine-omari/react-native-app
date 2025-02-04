@@ -1,4 +1,4 @@
-import { View, Text } from "react-native";
+import { View, Text, SafeAreaView } from "react-native";
 import React from "react";
 import { useRouter, useSearchParams } from "expo-router";
 import useFetch from "../../hook/useFetch";
@@ -12,9 +12,9 @@ const JobDetails = () => {
   });
 
   return (
-    <View>
+    <SafeAreaView>
       <Text>JobDetails</Text>
-    </View>
+    </SafeAreaView>
   );
 };
 
