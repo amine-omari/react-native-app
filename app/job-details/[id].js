@@ -1,6 +1,6 @@
 import { View, Text, SafeAreaView } from "react-native";
 import React from "react";
-import { useRouter } from "expo-router";
+import { Stack, useRouter } from "expo-router";
 import useFetch from "../../hook/useFetch";
 import { COLORS } from "../../constants";
 import { useSearchParams } from "expo-router/build/hooks";
@@ -15,7 +15,7 @@ const JobDetails = () => {
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.lightWhite }}>
-      <Text>JobDetails</Text>
+      <Stack.Screen></Stack.Screen>
     </SafeAreaView>
   );
 };
