@@ -22,6 +22,8 @@ const JobDetails = () => {
 
   const [refreshing, setRefreshing] = useState();
 
+  const onRefresh = () => {};
+
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.lightWhite }}>
       <Stack.Screen
