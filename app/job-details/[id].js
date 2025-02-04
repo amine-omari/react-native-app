@@ -4,6 +4,7 @@ import {
   SafeAreaView,
   ScrollView,
   RefreshControl,
+  ActivityIndicator,
 } from "react-native";
 import React, { useState } from "react";
 import { Stack, useRouter } from "expo-router";
@@ -51,7 +52,9 @@ const JobDetails = () => {
           refreshControl={
             <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
           }
-        ></ScrollView>
+        >{isLoading?(
+            <ActivityIndicator size="large" color={COLORS.primary}/>
+        )}</ScrollView>
       </>
     </SafeAreaView>
   );
