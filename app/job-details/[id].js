@@ -5,7 +5,7 @@ import {
   ScrollView,
   RefreshControl,
 } from "react-native";
-import React from "react";
+import React, { useState } from "react";
 import { Stack, useRouter } from "expo-router";
 import useFetch from "../../hook/useFetch";
 import { COLORS, icons } from "../../constants";
@@ -19,6 +19,8 @@ const JobDetails = () => {
   const { data, isLoading, error, refetch } = useFetch("job-details", {
     job_id: params.id,
   });
+
+  const [refreshing, setRefreshing] = useState();
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.lightWhite }}>
