@@ -5,7 +5,7 @@ import styles from "./company.style";
 
 const Company = (companyLogo, jobTitle, companyName, Location) => {
   return (
-    <View>
+    <View style={styles.container}>
       <Text>Company</Text>
     </View>
   );
