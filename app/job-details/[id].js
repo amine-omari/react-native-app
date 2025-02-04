@@ -2,6 +2,7 @@ import { View, Text, SafeAreaView } from "react-native";
 import React from "react";
 import { useRouter, useSearchParams } from "expo-router";
 import useFetch from "../../hook/useFetch";
+import { COLORS } from "../../constants";
 
 const JobDetails = () => {
   const params = useSearchParams();
@@ -12,7 +13,7 @@ const JobDetails = () => {
   });
 
   return (
-    <SafeAreaView>
+    <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.lightWhite }}>
       <Text>JobDetails</Text>
     </SafeAreaView>
   );
