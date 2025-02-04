@@ -1,8 +1,9 @@
 import { View, Text, SafeAreaView } from "react-native";
 import React from "react";
-import { useRouter, useSearchParams } from "expo-router";
+import { useRouter } from "expo-router";
 import useFetch from "../../hook/useFetch";
 import { COLORS } from "../../constants";
+import { useSearchParams } from "expo-router/build/hooks";
 
 const JobDetails = () => {
   const params = useSearchParams();
