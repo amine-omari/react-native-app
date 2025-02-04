@@ -35,7 +35,7 @@ const JobDetails = () => {
         }}
       ></Stack.Screen>
 
-      <ScrollView></ScrollView>
+      <ScrollView showsVerticalScrollIndicator={false}></ScrollView>
     </SafeAreaView>
   );
 };
