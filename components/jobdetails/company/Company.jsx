@@ -22,7 +22,9 @@ const Company = (companyLogo, jobTitle, companyName, Location) => {
         <Text style={styles.jobTitle}>{jobTitle}</Text>
       </View>
 
-      <View style={styles.companyInfoBox}></View>
+      <View style={styles.companyInfoBox}>
+        <Text style={styles.companyName}>{companyName} / </Text>
+      </View>
     </View>
   );
 };
