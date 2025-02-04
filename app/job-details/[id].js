@@ -9,7 +9,7 @@ import {
 import React, { useState } from "react";
 import { Stack, useRouter } from "expo-router";
 import useFetch from "../../hook/useFetch";
-import { COLORS, icons } from "../../constants";
+import { COLORS, icons, SIZES } from "../../constants";
 import { useSearchParams } from "expo-router/build/hooks";
 import { ScreenHeaderBtn } from "../../components";
 
@@ -60,7 +60,7 @@ const JobDetails = () => {
           ) : data.length === 0 ? (
             <Text>No Data</Text>
           ) : (
-            <View></View>
+            <View style={{ padding: SIZES.medium, paddingBottom: 1000 }}></View>
           )}
         </ScrollView>
       </>
