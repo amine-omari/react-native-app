@@ -3,6 +3,7 @@ import { View, Text, Image } from "react-native";
 
 import styles from "./company.style";
 import { checkImageURL } from "../../../utils";
+import { icons } from "../../../constants";
 
 const Company = (companyLogo, jobTitle, companyName, Location) => {
   return (
@@ -24,6 +25,13 @@ const Company = (companyLogo, jobTitle, companyName, Location) => {
 
       <View style={styles.companyInfoBox}>
         <Text style={styles.companyName}>{companyName} / </Text>
+        <View>
+          <Image
+            source={icons.location}
+            resizeMode="contain"
+            style={styles.locationImage}
+          />
+        </View>
       </View>
     </View>
   );
